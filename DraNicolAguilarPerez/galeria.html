@@ -10,6 +10,7 @@
             --gold-primary: #827437;
             --gold-secondary: #b68c4a;
             --dark: #000;
+            --gallery-header: #f4e7c7;
             --light: #ECF0F1;
             --bg-overlay: rgba(44, 62, 80, 0.85);
         }
@@ -22,14 +23,14 @@
         body {
             margin: 0;
             font-family: 'Raleway', sans-serif;
-            background-color: var(--dark);
+            background: radial-gradient(circle, rgba(255, 213, 128, 0.5) 0%, transparent 70%);
             color: var(--light);
         }
 
         .header-sticky {
             position: sticky;
             top: 0;
-            background-color: var(--dark);
+            background-color: var(--gallery-header);
             padding: 15px 0;
             text-align: center;
             z-index: 10;
@@ -38,27 +39,26 @@
         .header-sticky h1 {
             margin: 0 0 -20px 0;
             letter-spacing: 1.5px;
+            color: var(--gold-primary);
         }
         .header-sticky h2 {
             font-family: 'Ballet-Regular-VariableFont_opsz';
             margin: 0 30px -5px 0;
             font-weight: 300;
             font-size: 60px;
+            color: var(--gold-primary);
         }
 
         .button-back {
             display: inline-flex;
             align-items: center;
             padding: 10px 20px;
-            background-color: var(--gold-primary);
-            color: var(--dark);
+            background-color: var(--gallery-header);
+            color: var(--gold-primary);
             text-decoration: none;
             border-radius: 6px;
             font-weight: 600;
             transition: all 0.3s ease;
-        }
-        .button-back:hover {
-            background-color: var(--gold-secondary);
         }
 
         .gallery {
